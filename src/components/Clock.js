@@ -28,14 +28,21 @@ export default class Clock extends Component {
         })
     }
     render(){
-    //  console.log(`Clock component rendered`);
+    
       const {date,locale} = this.state;
+      let button;
+      if(locale==='bn-BD'){
+          button =  <Button change={this.handleClick} locale='en-US' />
+      }
+      else{
+         button = <Button change={this.handleClick} locale='bn-BD' />
+      }
         return (
             <div>
                 <h1 className='heading'>
                 <span className='text'>{date.toLocaleTimeString(locale)}</span>
                 </h1>
-                <Button change={this.handleClick} locale='en-US'></Button>
+               {button}
             </div>
         )
     }

@@ -1,10 +1,12 @@
 import React from 'react';
-import Clock from './components/Clock';
+import ClockList from './components/ClockList';
+// import Clock from './components/Clock
+
 
 function App() {
-  // console.log(`app component rendered`);
+  const quantities = [1,2,3]
   return <div>
-     <Clock />
+     <ClockList quantities={quantities} />
     </div>;
 }
 
