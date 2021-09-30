@@ -1,14 +1,12 @@
 import React from 'react';
-import Form from './components/Form';
-// import ClockList from './components/ClockList';
-// import Clock from './components/Clock
+import Calculator from './components/Calculator';
 
 
 function App() {
   
   return (
     <div>
-      <Form />
+     <Calculator />
     </div>
   )
 }
