@@ -1,13 +1,16 @@
 import React from 'react';
-import ClockList from './components/ClockList';
+import Form from './components/Form';
+// import ClockList from './components/ClockList';
 // import Clock from './components/Clock
 
 
 function App() {
-  const quantities = [1,2,3]
-  return <div>
-     <ClockList quantities={quantities} />
-    </div>;
+  
+  return (
+    <div>
+      <Form />
+    </div>
+  )
 }
 
 export default App;
