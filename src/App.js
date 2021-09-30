@@ -1,12 +1,15 @@
 import React from 'react';
-import Calculator from './components/Calculator';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+
 
 
 function App() {
   
   return (
     <div>
-     <Calculator />
+     <ClickCounter />
+     <HoverCounter />
     </div>
   )
 }
