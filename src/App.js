@@ -1,15 +1,17 @@
-import React from 'react'
-import Counter from './components/hooks/useState/Counter'
-// import NewTodo from './components/hooks/useState/NewTodo'
-// import Todo from './components/hooks/useState/Todo'
+import React,{useState} from 'react'
+import TimeComponent from './components/hooks/useEffect/TimeComponent'
 
 
 export default function App() {
+  const[show,setShow] = useState(true)
   return (
     <div>
-      {/* <Todo /> */}
-      {/* <NewTodo /> */}
-      <Counter />
+      <div>{show && <TimeComponent /> }</div>
+      <p>
+        <button type='button' onClick={()=>setShow((prevShow)=>!prevShow)}>
+          {show ? 'Hide post' : 'Show post'}
+        </button>
+      </p>
     </div>
   )
 }
