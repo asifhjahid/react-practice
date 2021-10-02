@@ -1,30 +1,11 @@
-import React,{useReducer} from 'react'
-import ComponentA from './components/hooks/useReducer/ComponentA';
+import React from 'react'
+import GetPost2 from './components/hooks/useReducer/GetPost2'
 
-export const counterContext = React.createContext();
-const initialState = 0;
-const reducer = (state,action)=>{
-    switch(action){
-        case 'increment':
-            return state + 1;
-
-        case 'decrement':
-            return state - 1;
-
-        default:
-            return state;
-    }
-}
 export default function App() {
-  const [count,dispatch] = useReducer(reducer,initialState);
   return (
     <div>
       
-     <div>Count: {count}</div>
-     <counterContext.Provider value={{countDispatch: dispatch}}>
-       <ComponentA />
-     </counterContext.Provider>
-     
+      <GetPost2 />
     </div>
   )
 }
