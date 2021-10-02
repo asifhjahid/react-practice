@@ -1,10 +1,12 @@
 import React from 'react'
-import Counter from './components/hooks/useReducer/Counter'
+import ComplexCounter from './components/hooks/useReducer/ComplexCounter'
 
 export default function App() {
   return (
     <div>
-      <Counter />
+      
+      <ComplexCounter />
+      
     </div>
   )
 }
