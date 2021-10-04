@@ -1,11 +1,13 @@
 import React from 'react'
-import GetPost2 from './components/hooks/useReducer/GetPost2'
+import LayoutComponent from './components/hooks/custom-hook/LayoutComponent'
+// import LayoutComponentTwo from './components/hooks/custom-hook/LayoutComponentTwo'
+
 
 export default function App() {
   return (
     <div>
-      
-      <GetPost2 />
+      <LayoutComponent />
+      {/* <LayoutComponentTwo /> */}
     </div>
   )
 }
